@@ -1,6 +1,10 @@
+/* Dependences */
+
 @import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Global variables */
 
 :root {
     --color__highlight: #f99f19;
@@ -9,6 +13,8 @@
     --size__lg: 5rem;
     --size__md: 3.5rem;
     --size__sm: 1.5rem;
+    --size__MAIN_LOGO: 5rem;
+    --size__SOCIAL_ICON: 2.5rem;
 
     --font__family: "Open Sans";
     --font__extrabold: 800;
@@ -17,7 +23,7 @@
 }
 
 
-/* Colors */
+/* Color Palette */
 
 .cta__title {
     color: var(--color__highlight);
@@ -52,10 +58,10 @@ body * {
 }
 
 .bi {
-    font-size: 2.5rem;
+    font-size: var(--size__SOCIAL_ICON);
 }
 
-/* Estilo */
+/* Style */
 
 body {
     background-image: url(../images/background.jpg);
@@ -63,67 +69,11 @@ body {
 }
 
 .logo_batista {
-    width: 5rem;
+    width: var(--size__MAIN_LOGO);
 }
 
 .logo_conferencia__dany_grace {
     filter: grayscale(1) opacity(.72);
-}
-
-/* Layout - Spacing */
-
-.wrapper {
-    margin: auto;
-    padding: var(--size__lg);
-}
-
-.header {
-    margin-bottom: var(--size__sm);
-}
-
-.hero {
-    gap: var(--size__sm)
-}
-
-.cta__title, .cta__text {
-    margin-bottom: var(--size__sm);
-}
-
-.social {
-    margin-top: var(--size__md);
-}
-
-/* Layout - Grid */
-
-.wrapper {
-    max-width: 1024px;
-}
-
-.header {
-    display: inline-block;
-    width: 100%;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-}
-
-.hero > * {
-    flex: 1 1 0;
-}
-
-.social {
-    display: flex;
-    gap: var(--size__md);
-}
-
-.illustration {
-    text-align: center;
-}
-
-.logo_conferencia {
-    display: inline-block;
 }
 
 .logo_conferencia__dany_grace {
@@ -132,13 +82,51 @@ body {
 }
 
 .logo_conferencia__lettering {
+    padding-top: 15%;
     position: relative;
     z-index: 1;
 }
 
-/* Responsiveness */
+/* Alignment */
 
-@media (max-width: 900px) {
+.logo_conferencia {
+    text-align: center;
+}
+
+/* Layout */
+
+.social {
+    display: flex;
+}
+
+body {
+    height: 100vh;
+}
+
+/* Spacing */
+
+.wrapper {
+    margin: var(--size__sm);
+}
+
+.header {
+    margin-bottom: var(--size__md);
+}
+
+.social {
+    gap: var(--size__md);
+}
+
+@media (min-width: 720px) {
+
+    /* Spacing */
+
+    .social {
+        margin-top: var(--size__sm);
+    }    
+}
+
+@media (max-width: 719px) {
 
     /* Style */
 
@@ -146,36 +134,28 @@ body {
         background-attachment: fixed;
     }
 
-    /* Layout - Spacing */
-
-    .wrapper {
-        padding: var(--size__md);
+    .logo_batista {
+        width: 7rem;
     }
 
-    .illustration {
-        margin: var(--size__md) auto;
-    }
-    
-    /* Layout - Grid */
-
-    .hero {
-        align-items: flex-start;
-    }
+    /* Alignment */
 
     .logo_batista {
-        width: 25%;
+        margin: auto;
     }
 
-    .header, .cta > *  {
+    .cta {
         text-align: center;
-    }
-
-    .hero {
-        flex-direction: column-reverse;
     }
 
     .social {
         justify-content: space-around;
+    }
+
+    /* Spacing */
+
+    .illustration, .cta__title, .social {
+        margin-top: var(--size__md);
     }
 
 }
