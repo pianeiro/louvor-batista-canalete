@@ -17,7 +17,7 @@
 }
 
 
-/* Colors */ 
+/* Colors */
 
 .cta__title {
     color: var(--color__highlight);
@@ -58,7 +58,7 @@ body * {
 /* Estilo */
 
 body {
-    background-image: url(../images/background.png);
+    background-image: url(../images/background.jpg);
     background-position: center center;
 }
 
@@ -95,10 +95,6 @@ body {
 
 /* Layout - Grid */
 
-body {
-    overflow-x: hidden;
-}
-
 .wrapper {
     max-width: 1024px;
 }
@@ -133,33 +129,17 @@ body {
 .logo_conferencia__dany_grace {
     position: absolute;
     z-index: 0;
-    /* transform: translate(0, -12.5%); */
 }
 
 .logo_conferencia__lettering {
     position: relative;
     z-index: 1;
-    /* transform: translate(0, 12.5%); */
 }
 
 /* Responsiveness */
 
 @media (max-width: 900px) {
 
-    /* Layout - Spacing */
-
-    .header {
-        margin-bottom: var(--size__lg);
-    }
-
-    .hero {
-        align-items: flex-start;
-    }
-
-}
-
-@media (max-width: 700px) {
-    
     /* Style */
 
     body {
@@ -168,11 +148,19 @@ body {
 
     /* Layout - Spacing */
 
-    .social {
-        margin: var(--size__md) var(--size__lg);
+    .wrapper {
+        padding: var(--size__md);
+    }
+
+    .illustration {
+        margin: var(--size__md) auto;
     }
     
     /* Layout - Grid */
+
+    .hero {
+        align-items: flex-start;
+    }
 
     .logo_batista {
         width: 25%;
@@ -186,7 +174,8 @@ body {
         flex-direction: column-reverse;
     }
 
-    .illustration, *.logo_conferencia {
-        width: 100%;
+    .social {
+        justify-content: space-around;
     }
+
 }
