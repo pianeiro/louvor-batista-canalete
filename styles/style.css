@@ -9,12 +9,16 @@
 :root {
     --color__highlight: #f99f19;
     --color__primary: #fff;
+    --color__secondary: #53234F;
 
     --size__lg: 5rem;
     --size__md: 3.5rem;
     --size__sm: 1.5rem;
+    --size__xs: .75rem;
     --size__MAIN_LOGO: 5rem;
     --size__SOCIAL_ICON: 2.5rem;
+    --size__BUTTON: 13rem;
+    --size__BORDER_RADIUS: .25rem;
 
     --font__family: "Open Sans";
     --font__extrabold: 800;
@@ -31,6 +35,15 @@
 
 .cta__text, .social * {
     color: var(--color__primary);
+}
+
+.cta__button {
+    color: var(--color__primary);
+    background-color: var(--color__highlight);
+}
+
+.cta__button:hover {
+    background-color: var(--color__secondary);
 }
 
 .bi:hover {
@@ -57,6 +70,15 @@ body * {
     font-weight: var(--font__bold);
 }
 
+.cta__button {
+    font-weight: var(--font__bold);
+    text-decoration: none;
+}
+
+.cta__button:hover {
+    font-weight: var(--font__extrabold);
+}
+
 .bi {
     font-size: var(--size__SOCIAL_ICON);
 }
@@ -70,6 +92,10 @@ body {
 
 .logo_batista {
     width: var(--size__MAIN_LOGO);
+}
+
+.cta__button {
+    border-radius: var(--size__BORDER_RADIUS);
 }
 
 .logo_conferencia__dany_grace {
@@ -103,6 +129,12 @@ body {
     height: 100vh;
 }
 
+.cta__button {
+    display: inline-block;
+    width: var(--size__BUTTON);
+    text-align: center;
+}
+
 /* Spacing */
 
 .wrapper {
@@ -115,6 +147,10 @@ body {
 
 .social {
     gap: var(--size__md);
+}
+
+.cta__button {
+    padding: var(--size__xs) 0;
 }
 
 @media (min-width: 720px) {
