@@ -50,7 +50,7 @@
     background-color: var(--color__highlight);
 }
 
-.steps__title {
+.steps__title, .steps__subtitle {
     color: var(--color__secondary);
 }
 
@@ -77,6 +77,10 @@ body * {
     font-family: var(--font__family);
 }
 
+em {
+    font-weight: var(--font__extrabold);
+}
+
 .cta__title {
     font-size: var(--size__md);
     font-weight: var(--font__extrabold);
@@ -101,8 +105,17 @@ body * {
     font-weight: var(--font__extrabold);
 }
 
+.steps__subtitle {
+    font-size: var(--size__sm);
+    font-weight: var(--font__extrabold);
+}
+
 .steps__text {
     font-size: var(--size__sm);
+}
+
+.steps__subtitle + .steps__text {
+    font-size: var(--size__xs);
 }
 
 .step__name {
