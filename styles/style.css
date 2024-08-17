@@ -9,12 +9,13 @@
 :root {
     --color__highlight: #f99f19;
     --color__primary: #fff;
+    --color__alternative: #222;
     --color__secondary: #53234F;
 
     --size__lg: 5rem;
     --size__md: 3.5rem;
     --size__sm: 1.5rem;
-    --size__xs: .75rem;
+    --size__xs: 1rem;
     --size__MAIN_LOGO: 5rem;
     --size__BUTTON: 13rem;
     --size__BORDER_RADIUS: .25rem;
@@ -45,8 +46,29 @@
     background-color: var(--color__secondary);
 }
 
-.bi:hover {
-    color: var(--color__highlight);
+#steps {
+    background-color: var(--color__highlight);
+}
+
+.steps__title {
+    color: var(--color__secondary);
+}
+
+.steps__text, .step__name, .step__description {
+    color: var(--color__alternative);
+}
+
+.steps__list .bi {
+    color: var(--color__secondary);
+}
+
+.step__action{
+    color: var(--color__primary);
+    background-color: var(--color__alternative);
+}
+
+.step__action:hover {
+    background-color: var(--color__secondary);
 }
 
 /* Typography */
@@ -72,6 +94,33 @@ body * {
 
 .cta__button:hover {
     font-weight: var(--font__extrabold);
+}
+
+.steps__title {
+    font-size: var(--size__md);
+    font-weight: var(--font__extrabold);
+}
+
+.steps__text {
+    font-size: var(--size__sm);
+}
+
+.step__name {
+    font-weight: var(--font__bold);
+    font-size: var(--size__sm);
+}
+
+.step__description {
+    font-size: var(--size__xs);
+}
+
+.step__action {
+    text-decoration: none;
+    font-size: var(--size__xs);
+}
+
+.step__action:hover {
+    font-weight: var(--font__bold);
 }
 
 /* Style */
@@ -104,9 +153,17 @@ body * {
     z-index: 1;
 }
 
+.step .bi {
+    font-size: var(--size__md);
+}
+
+.step__action {
+    border-radius: var(--size__BORDER_RADIUS);
+}
+
 /* Alignment */
 
-.logo_conferencia {
+.step {
     text-align: center;
 }
 
@@ -118,9 +175,15 @@ body * {
     text-align: center;
 }
 
+.step__action {
+    display: inline-block;
+    width: var(--size__BUTTON);
+    text-align: center;
+}
+
 /* Spacing */
 
-.hero__wrapper {
+.hero__wrapper, .steps__wrapper {
     padding: var(--size__sm);
 }
 
@@ -129,6 +192,14 @@ body * {
 }
 
 .cta__button {
+    padding: var(--size__xs) 0;
+}
+
+.steps__list {
+    align-content: space-around;
+}
+
+.step__action {
     padding: var(--size__xs) 0;
 }
 
@@ -144,7 +215,7 @@ body * {
         margin: auto;
     }
 
-    .cta {
+    .cta, .steps__wrapper {
         text-align: center;
     }
 
