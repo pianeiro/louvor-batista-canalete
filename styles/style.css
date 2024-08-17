@@ -85,7 +85,7 @@ body * {
 
 /* Style */
 
-body {
+#hero {
     background-image: url(../images/background.jpg);
     background-position: center center;
 }
@@ -125,10 +125,6 @@ body {
     display: flex;
 }
 
-body {
-    height: 100vh;
-}
-
 .cta__button {
     display: inline-block;
     width: var(--size__BUTTON);
@@ -137,8 +133,8 @@ body {
 
 /* Spacing */
 
-.wrapper {
-    margin: var(--size__sm);
+.hero__wrapper {
+    padding: var(--size__sm);
 }
 
 .header {
@@ -163,12 +159,6 @@ body {
 }
 
 @media (max-width: 719px) {
-
-    /* Style */
-
-    body {
-        background-attachment: fixed;
-    }
 
     .logo_batista {
         width: 7rem;
