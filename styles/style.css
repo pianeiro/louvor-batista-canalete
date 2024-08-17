@@ -16,7 +16,6 @@
     --size__sm: 1.5rem;
     --size__xs: .75rem;
     --size__MAIN_LOGO: 5rem;
-    --size__SOCIAL_ICON: 2.5rem;
     --size__BUTTON: 13rem;
     --size__BORDER_RADIUS: .25rem;
 
@@ -33,7 +32,7 @@
     color: var(--color__highlight);
 }
 
-.cta__text, .social * {
+.cta__text {
     color: var(--color__primary);
 }
 
@@ -66,10 +65,6 @@ body * {
     font-weight: var(--font__regular);
 }
 
-.cta__text em {
-    font-weight: var(--font__bold);
-}
-
 .cta__button {
     font-weight: var(--font__bold);
     text-decoration: none;
@@ -77,10 +72,6 @@ body * {
 
 .cta__button:hover {
     font-weight: var(--font__extrabold);
-}
-
-.bi {
-    font-size: var(--size__SOCIAL_ICON);
 }
 
 /* Style */
@@ -121,10 +112,6 @@ body * {
 
 /* Layout */
 
-.social {
-    display: flex;
-}
-
 .cta__button {
     display: inline-block;
     width: var(--size__BUTTON);
@@ -141,21 +128,8 @@ body * {
     margin-bottom: var(--size__md);
 }
 
-.social {
-    gap: var(--size__md);
-}
-
 .cta__button {
     padding: var(--size__xs) 0;
-}
-
-@media (min-width: 720px) {
-
-    /* Spacing */
-
-    .social {
-        margin-top: var(--size__sm);
-    }    
 }
 
 @media (max-width: 719px) {
@@ -174,13 +148,9 @@ body * {
         text-align: center;
     }
 
-    .social {
-        justify-content: space-around;
-    }
-
     /* Spacing */
 
-    .illustration, .cta__title, .social {
+    .illustration, .cta__title {
         margin-top: var(--size__md);
     }
 
