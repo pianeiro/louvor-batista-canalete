@@ -46,28 +46,28 @@
     background-color: var(--color__secondary);
 }
 
-#steps {
+#sections {
     background-color: var(--color__highlight);
 }
 
-.steps__title, .steps__subtitle {
+.sections__title, .sections__subtitle {
     color: var(--color__secondary);
 }
 
-.steps__text, .step__name, .step__description {
+.sections__text, .section__name, .section__description {
     color: var(--color__alternative);
 }
 
-.steps__list .bi {
+.sections__list .bi {
     color: var(--color__secondary);
 }
 
-.step__action{
+.section__action{
     color: var(--color__primary);
     background-color: var(--color__alternative);
 }
 
-.step__action:hover {
+.section__action:hover {
     background-color: var(--color__secondary);
 }
 
@@ -100,39 +100,39 @@ em {
     font-weight: var(--font__extrabold);
 }
 
-.steps__title {
+.sections__title {
     font-size: var(--size__md);
     font-weight: var(--font__extrabold);
 }
 
-.steps__subtitle {
+.sections__subtitle {
     font-size: var(--size__sm);
     font-weight: var(--font__extrabold);
 }
 
-.steps__text {
+.sections__text {
     font-size: var(--size__sm);
 }
 
-.steps__subtitle + .steps__text {
+.sections__subtitle + .sections__text {
     font-size: var(--size__xs);
 }
 
-.step__name {
+.section__name {
     font-weight: var(--font__bold);
     font-size: var(--size__sm);
 }
 
-.step__description {
+.section__description {
     font-size: var(--size__xs);
 }
 
-.step__action {
+.section__action {
     text-decoration: none;
     font-size: var(--size__xs);
 }
 
-.step__action:hover {
+.section__action:hover {
     font-weight: var(--font__bold);
 }
 
@@ -166,17 +166,21 @@ em {
     z-index: 1;
 }
 
-.step .bi {
+#sections {
+    border-bottom: var(--size__xs) var(--color__secondary) solid;
+}
+
+.section .bi {
     font-size: var(--size__md);
 }
 
-.step__action {
+.section__action {
     border-radius: var(--size__BORDER_RADIUS);
 }
 
 /* Alignment */
 
-.step {
+.section {
     text-align: center;
 }
 
@@ -188,7 +192,7 @@ em {
     text-align: center;
 }
 
-.step__action {
+.section__action {
     display: inline-block;
     width: var(--size__BUTTON);
     text-align: center;
@@ -196,7 +200,7 @@ em {
 
 /* Spacing */
 
-.hero__wrapper, .steps__wrapper {
+.hero__wrapper, .sections__wrapper {
     padding: var(--size__sm);
 }
 
@@ -208,11 +212,11 @@ em {
     padding: var(--size__xs) 0;
 }
 
-.steps__list {
+.sections__list {
     align-content: space-around;
 }
 
-.step__action {
+.section__action {
     padding: var(--size__xs) 0;
 }
 
@@ -228,7 +232,7 @@ em {
         margin: auto;
     }
 
-    .cta, .steps__wrapper {
+    .cta, .sections__wrapper {
         text-align: center;
     }
 
