@@ -46,19 +46,19 @@
     background-color: var(--color__secondary);
 }
 
-#sections {
+#section {
     background-color: var(--color__highlight);
 }
 
-.sections__title, .sections__subtitle {
+.section__title, .section__subtitle {
     color: var(--color__secondary);
 }
 
-.sections__text, .section__name, .section__description {
+.section__text, .section__name, .section__description {
     color: var(--color__alternative);
 }
 
-.sections__list .bi {
+.section__list .bi {
     color: var(--color__secondary);
 }
 
@@ -100,21 +100,21 @@ em {
     font-weight: var(--font__extrabold);
 }
 
-.sections__title {
+.section__title {
     font-size: var(--size__md);
     font-weight: var(--font__extrabold);
 }
 
-.sections__subtitle {
+.section__subtitle {
     font-size: var(--size__sm);
     font-weight: var(--font__extrabold);
 }
 
-.sections__text {
+.section__text {
     font-size: var(--size__sm);
 }
 
-.sections__subtitle + .sections__text {
+.section__subtitle + .section__text {
     font-size: var(--size__xs);
 }
 
@@ -167,7 +167,7 @@ em {
     z-index: 1;
 }
 
-#sections {
+#section {
     border-bottom: var(--size__xs) var(--color__secondary) solid;
 }
 
@@ -213,7 +213,7 @@ em {
     padding: var(--size__xs) 0;
 }
 
-.sections__list {
+.section__list {
     align-content: space-around;
 }
 
@@ -233,7 +233,7 @@ em {
         margin: auto;
     }
 
-    .cta, #sections .wrapper {
+    .cta, #section .wrapper {
         text-align: center;
     }
 
