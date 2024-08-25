@@ -54,20 +54,20 @@
     color: var(--color__secondary);
 }
 
-.section__text, .section__name, .section__description {
+.section__text, .card__name, .card__description {
     color: var(--color__alternative);
 }
 
-.section__list .bi {
+.card__icon {
     color: var(--color__secondary);
 }
 
-.section__action{
+.card__action {
     color: var(--color__primary);
     background-color: var(--color__alternative);
 }
 
-.section__action:hover {
+.card__action:hover {
     background-color: var(--color__secondary);
 }
 
@@ -118,21 +118,21 @@ em {
     font-size: var(--size__xs);
 }
 
-.section__name {
+.card__name {
     font-weight: var(--font__bold);
     font-size: var(--size__sm);
 }
 
-.section__description {
+.card__description {
     font-size: var(--size__xs);
 }
 
-.section__action {
+.card__action {
     text-decoration: none;
     font-size: var(--size__xs);
 }
 
-.section__action:hover {
+.card__action:hover {
     font-weight: var(--font__bold);
 }
 
@@ -171,17 +171,17 @@ em {
     border-bottom: var(--size__xs) var(--color__secondary) solid;
 }
 
-.section .bi {
+.card__icon {
     font-size: var(--size__md);
 }
 
-.section__action {
+.card__action {
     border-radius: var(--size__BORDER_RADIUS);
 }
 
 /* Alignment */
 
-.section {
+.section__card {
     text-align: center;
 }
 
@@ -193,7 +193,7 @@ em {
     text-align: center;
 }
 
-.section__action {
+.card__action {
     display: inline-block;
     width: var(--size__BUTTON);
     text-align: center;
@@ -213,11 +213,11 @@ em {
     padding: var(--size__xs) 0;
 }
 
-.section__list {
+.section__cards {
     align-content: space-around;
 }
 
-.section__action {
+.card__action {
     padding: var(--size__xs) 0;
 }
 
