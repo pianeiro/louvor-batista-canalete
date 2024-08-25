@@ -47,6 +47,7 @@
 }
 
 #section {
+    border-color: var(--color__secondary);
     background-color: var(--color__highlight);
 }
 
@@ -167,8 +168,9 @@ em {
     z-index: 1;
 }
 
-#section {
-    border-bottom: var(--size__xs) var(--color__secondary) solid;
+#section:last-child {
+    border-bottom-width: var(--size__xs);
+    border-bottom-style: solid;
 }
 
 .card__icon {
