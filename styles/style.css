@@ -140,7 +140,8 @@ em {
 
 #hero {
     background-image: url(../images/background.jpg);
-    background-position: center center;
+    background-position-x: center;
+    backgroun-position-y: center;
 }
 
 .logo_batista {
@@ -200,7 +201,7 @@ em {
 
 /* Spacing */
 
-.hero__wrapper, .sections__wrapper {
+.wrapper {
     padding: var(--size__sm);
 }
 
@@ -232,7 +233,7 @@ em {
         margin: auto;
     }
 
-    .cta, .sections__wrapper {
+    .cta, #sections .wrapper {
         text-align: center;
     }
 
