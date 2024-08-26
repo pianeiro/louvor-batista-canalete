@@ -224,7 +224,7 @@ body {
 /* Layout */
 
 .cta__button {
-    display: inline-block;
+    display: block;
     width: var(--size__BUTTON);
     text-align: center;
 }
@@ -233,6 +233,14 @@ body {
     display: inline-block;
     width: var(--size__BUTTON);
     text-align: center;
+}
+
+#subscription .card__action {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    max-width: 16rem;
+    height: 7rem;
 }
 
 /* Spacing */
@@ -257,6 +265,13 @@ body {
     padding: var(--size__xs) 0;
 }
 
+#subscription .card__action {
+  margin: var(--size__sm) auto;
+}
+
+/* Layout */
+
+
 @media (max-width: 719px) {
 
     .logo_batista {
@@ -277,6 +292,15 @@ body {
 
     .illustration, .cta__title {
         margin-top: var(--size__md);
+    }
+
+    .cta__button {
+      margin: auto;
+    }
+
+    /* Layout */
+    #subscription .card__action {
+      width: 100%;
     }
 
 }
