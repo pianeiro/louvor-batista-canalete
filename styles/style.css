@@ -29,7 +29,7 @@
 
 /* Color Palette */
 body {
-    border-color: var(--color__secondary);
+    border-color: var(--color__highlight);
 }
 
 .cta__title {
@@ -49,29 +49,60 @@ body {
     background-color: var(--color__secondary);
 }
 
-#subscription, #contact { 
+#subscription { 
     background-color: var(--color__highlight);
 }
 
-.section__title, .section__subtitle {
+#subscription .section__title, .section__subtitle {
     color: var(--color__secondary);
 }
 
-.section__text, .card__name, .card__description {
+#subscription .section__text, .card__name, .card__description {
     color: var(--color__alternative);
 }
 
-.card__icon {
+#subscription .card__icon {
     color: var(--color__secondary);
 }
 
-.card__action {
+#subscription .card__action {
     color: var(--color__primary);
     background-color: var(--color__alternative);
 }
 
-.card__action:hover {
+#subscription .card__action:hover {
     background-color: var(--color__secondary);
+}
+
+#contact { 
+    background-color: var(--color__secondary);
+}
+
+#contact .section__title {
+    color: var(--color__highlight);
+}
+
+#contact .section__subtitle {
+    color: var(--color__primary);
+}
+
+#contact .card__name,
+#contact .section__text,
+#contact .card__description {
+    color: var(--color__primary);
+}
+
+#contact .card__icon {
+    color: var(--color__highlight);
+}
+
+#contact .card__action {
+    color: var(--color__primary);
+    background-color: var(--color__alternative);
+}
+
+#contact .card__action:hover {
+    color: var(--color__highlight);
 }
 
 /* Typography */
